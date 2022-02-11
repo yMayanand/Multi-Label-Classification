@@ -1,0 +1,6 @@
+*.ipynb
+*.tar
+/VOCdevkit
+*.xml
+*.jpg
+*.png
