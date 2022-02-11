@@ -4,3 +4,5 @@
 *.xml
 *.jpg
 *.png
+*.pyc
+*.vscode
