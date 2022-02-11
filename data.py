@@ -45,7 +45,10 @@ class Dataset:
         label = set()
         label.update([i["name"] for i in self.ds[idx][1]["annotation"]["object"]])
         label = list(map(lambda x: cls2idx[x], label))
-        label = torch.tensor(label)
+        temp = torch.zeros(20)
+        for i in label:
+            temp[i] = 1
+        label = temp
         return image, label
 
 
